@@ -12,6 +12,7 @@ img {
 
 body {
   font-family: "Fira Sans", sans-serif;
+  background-color: rgba(241, 241, 243, 1);
 }
 /* shared styles */
 
@@ -34,6 +35,15 @@ body {
 .section-heading {
     font-size: 40px;
     font-weight: 700;
+}
+
+.card-heading {
+    font-size: 20px;
+    color: rgba(14, 14, 14, 0.8);
+}
+
+.card-description {
+    color: rgba(14, 14, 14, 0.7);
 }
 
 /* navbar related styles */
@@ -73,6 +83,12 @@ nav > button {
     margin-top: 15px;
 }
 
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .banner-content > h3 {
     font-size: 24px;
     color: rgba(14, 14, 14, 0.5);
@@ -85,7 +101,29 @@ nav > button {
 
 /* pillar section related styles */
 
+.pillar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 80px auto;
+}
+
 .pillar-section > div {
     display: flex;
     justify-content: space-between;
 }
+
+.pillar-section > div > div {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.pillar-section > div > div > img {
+    max-width: 64px;
+}
+
